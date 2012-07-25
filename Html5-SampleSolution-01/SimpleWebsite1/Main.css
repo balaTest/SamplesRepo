@@ -1,0 +1,29 @@
+﻿/* SimplePage-02 */
+p[title*="P"] {
+    color: blue;
+}
+
+/* SimplePage-03 */
+* {
+    color: brown;
+}
+div:not(.bucky) {
+    color: purple;
+}
+p:nth-child(odd) {
+    color:green;
+}
+p:nth-child(even) {
+    color:red;
+}
+
+/* SimplePage-04 */
+div#daddy > p {
+    color: yellow;
+}
+p.ducky + p {
+    color: gray;
+}
+p.mucky ~ p {
+    color:lightgreen;
+}
