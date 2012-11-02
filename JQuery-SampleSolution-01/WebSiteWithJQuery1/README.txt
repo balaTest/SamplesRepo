@@ -1,0 +1,1 @@
+﻿Basic jQuery samples based on tutorials at http://learn.appendto.com/
