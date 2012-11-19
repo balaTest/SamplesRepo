@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script>
+        function RunJSClick() {
+            $(".html-ex > p")
+            .html("<em>This is some new markup</em>");
+        }
+    </script>
+</head>
+<body>
+    <div class="html-ex">
+        <p>Foo</p>
+        <p>Bar</p>
+    </div>
+
+    <input type="button" name="Run" value="Run JS" onclick="RunJSClick();" />
+</body>
+</html>
