@@ -59,6 +59,9 @@
   <ItemGroup>
     <Content Include="BasicCss-01.html" />
     <Content Include="BasicCss-02.html" />
+    <Content Include="BasicCss-03.html" />
+    <Content Include="BasicCss-Ext-01.html" />
+    <Content Include="css\stylesheet.css" />
     <Content Include="README.txt" />
     <Content Include="Web.config" />
   </ItemGroup>

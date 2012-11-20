@@ -1,0 +1,18 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3em;
+    background-color: #3366CC;
+}
+
+p {
+    font-size: 1em;
+}
