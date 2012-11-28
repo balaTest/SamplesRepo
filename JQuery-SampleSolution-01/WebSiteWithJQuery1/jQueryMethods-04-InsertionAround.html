@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script>
+        function runWrap() {
+            $("p").wrap("<div></div>");
+        }
+        function runUnwrap() {
+            $("p").unwrap();
+        }
+        function runWrapAll() {
+            $("p").wrapAll("<div></div>");
+        }
+        function runWrapInner() {
+            $("p").wrapInner("<div class='new' />");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Hello</p>
+        <p>cruel</p>
+        <p>World</p>
+    </div>
+
+    <input type="button" name="Run" value="Wrap" onclick="runWrap();" />
+    <input type="button" name="Run" value="UnWrap" onclick="runUnwrap();" />
+    <input type="button" name="Run" value="Wrap all" onclick="runWrapAll();" />
+    <input type="button" name="Run" value="Wrap inner" onclick="runWrapInner();" />
+</body>
+</html>

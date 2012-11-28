@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script>
+        function runAppendTo() {
+            $("<div>Appended using .appendTo</div>")
+            .appendTo(".nest-ex");
+        }
+        function runAppend() {
+            $('.nest-ex').append('<div>Appended using .append</div>');
+
+        }
+    </script>
+</head>
+<body>
+    <div class="nest-ex">
+    </div>
+
+    <input type="button" name="Run" value="AppendTo" onclick="runAppendTo();" />
+    <input type="button" name="Run" value="Append" onclick="runAppend();" />
+</body>
+</html>

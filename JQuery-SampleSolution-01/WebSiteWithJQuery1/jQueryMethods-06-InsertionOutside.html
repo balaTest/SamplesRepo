@@ -5,13 +5,15 @@
     <script src="Scripts/jquery-1.8.2.js"></script>
     <script>
         function RunJSClick() {
-            $("<div>Appended using jQuery</div>")
-            .appendTo(".nest-ex");
+            $('.inner').after('<p>Test</p>');
         }
     </script>
 </head>
 <body>
-    <div class="nest-ex">
+    <div class="container">
+        <h2>Greetings</h2>
+        <div class="inner">Hello</div>
+        <div class="inner">Goodbye</div>
     </div>
 
     <input type="button" name="Run" value="Run JS" onclick="RunJSClick();" />
