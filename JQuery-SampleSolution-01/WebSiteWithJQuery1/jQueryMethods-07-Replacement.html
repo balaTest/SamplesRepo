@@ -4,8 +4,11 @@
     <title></title>
     <script src="Scripts/jquery-1.8.2.js"></script>
     <script>
-        function RunJSClick() {
+        function runReplaceWith() {
             $('div.second').replaceWith('<h2>New heading</h2>');
+        }
+        function runReplaceAll() {
+            $('<h2>New heading</h2>').replaceAll('.inner');
         }
     </script>
 </head>
@@ -16,6 +19,7 @@
         <div class="inner third">Goodbye</div>
     </div>
 
-    <input type="button" name="Run" value="Run JS" onclick="RunJSClick();" />
+    <input type="button" name="Run" value="Replace With" onclick="runReplaceWith();" />
+    <input type="button" name="Run" value="Replace All" onclick="runReplaceAll();" />
 </body>
 </html>

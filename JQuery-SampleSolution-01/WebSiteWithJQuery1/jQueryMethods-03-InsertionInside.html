@@ -12,6 +12,14 @@
             $('.nest-ex').append('<div>Appended using .append</div>');
 
         }
+        function runPrependTo() {
+            $("<div>Appended using .prependTo</div>")
+            .prependTo(".nest-ex");
+        }
+        function runPrepend() {
+            $('.nest-ex').prepend('<div>Appended using .prepend</div>');
+
+        }
     </script>
 </head>
 <body>
@@ -20,5 +28,7 @@
 
     <input type="button" name="Run" value="AppendTo" onclick="runAppendTo();" />
     <input type="button" name="Run" value="Append" onclick="runAppend();" />
+    <input type="button" name="Run" value="PrependTo" onclick="runPrependTo();" />
+    <input type="button" name="Run" value="Prepend" onclick="runPrepend();" />
 </body>
 </html>
