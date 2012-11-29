@@ -1,0 +1,27 @@
+﻿<!doctype html>
+ 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Progressbar - Animated</title>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <link rel="stylesheet" href="Content/themes/base/jquery-ui.css" />
+    <style>
+    .ui-progressbar .ui-progressbar-value { background-image: url(images/pbar-ani.gif); }
+    </style>
+    <script>
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 59
+            });
+        });
+    </script>
+</head>
+<body>
+ 
+<div id="progressbar"></div>
+ 
+ 
+</body>
+</html>
