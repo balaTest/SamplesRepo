@@ -10,7 +10,7 @@
 html>body #tres { color: red }
  
 /* IE8, FF, Saf, Opera (Everything but IE 6,7) */
-html>/**/body #cuatro { color: red }
+html>/**/body #cuatro { color: red; }
  
 /* Opera 9.27 and below, safari 2 */
 html:first-child #cinco { color: red }
@@ -80,7 +80,7 @@ body:not(:-moz-handler-blocked) #cuarenta { color: red; }
 #veinte { color/*\**/: blue\9; }
  
 /* IE6, IE7 -- acts as an !important */
- /*#veintesiete { color: blue !ie; } /* string after ! can be anything */*/
+#veintesiete { color: blue !ie; } /* string after ! can be anything */
 
 /* IE8, IE9 */
 #anotherone  {color: blue\0/;} /* must go at the END of all rules */
