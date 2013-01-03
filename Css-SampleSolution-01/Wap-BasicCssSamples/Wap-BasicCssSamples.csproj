@@ -62,7 +62,9 @@
     <Content Include="BasicCss-03.html" />
     <Content Include="BasicCss-Ext-01.html" />
     <Content Include="BrowserHacksSample.html" />
+    <Content Include="CssCascading.html" />
     <Content Include="css\BrowserHacks.css" />
+    <Content Include="css\CssCascading.css" />
     <Content Include="css\stylesheet.css" />
     <Content Include="README.txt" />
     <Content Include="Web.config" />
