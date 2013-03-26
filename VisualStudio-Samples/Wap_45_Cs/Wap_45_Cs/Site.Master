@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Wap_45_Cs.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="Content/Site.css" rel="stylesheet" media="screen" />
+
+    <!-- Enable responsive Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Do we need something like this? -->
+
+    <!-- Fav and touch icons -->
+    <!-- Do we need these from the sample? -->
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+    <div class="container-narrow">
+
+      <div>
+        <ul class="nav nav-pills pull-right">
+          <%-- TODO: use runat=server and ~/ for links below?? --%>
+          <li class="active"><a href="./">Home</a></li>
+          <li><a href="./About.aspx">About</a></li>
+          <li><a href="./Contact.aspx">Contact</a></li>
+        </ul>
+        <h3 class="muted">Project name</h3>
+      </div>
+
+      <hr />
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+      <div class="footer">
+        <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    </div>
+    </form>
+</body>
+</html>
