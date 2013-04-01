@@ -3,14 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div>
+    <div class="jumbotron">
         <h1><%: Title %></h1>
         <p class="lead">Your app description page.</p>
     </div>
 
     <hr />
 
-    <div class="row-fluid">
+    <div class="row-fluid marketing">
         <article class="span8">
             <p>
                 Use this area to provide additional information.
