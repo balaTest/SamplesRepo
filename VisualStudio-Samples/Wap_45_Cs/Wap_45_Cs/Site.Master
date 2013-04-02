@@ -7,15 +7,18 @@
     <meta charset="utf-8" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
+    <!-- Modernizr : HTML5 shim for IE6-8 support of HTML5 elements -->
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+
     <!-- Styles -->
     <webopt:BundleReference runat="server" Path="~/Content/bootstrap" />
     <webopt:BundleReference runat="server" Path="~/Content/css" />
 
     <!-- Enable responsive Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!-- Do we need something like this? -->
+    <webopt:BundleReference runat="server" Path="~/Content/bootstrapResponsive" />
 
     <!-- Fav and touch icons -->
     <!-- TODO: Add any touch icons like in bootstrap sample? -->
@@ -69,7 +72,7 @@
             </div>
             <!-- /container -->
 
-            <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+            <asp:PlaceHolder runat="server">
                 <%: Scripts.Render("~/bundles/jquery") %>
                 <%: Scripts.Render("~/bundles/bootstrap") %>
             </asp:PlaceHolder>
