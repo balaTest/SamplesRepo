@@ -4,21 +4,23 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div>
+    <header>
         <h1><%: Title %></h1>
-        <h2>Modify this template to jump-start your ASP.NET application.</h2>
+        <p class="lead">Your app home page.</p>
 
+        <hr />
+        <h3>Modify this template to jump-start your ASP.NET application.</h3>
         <p class="lead">
             To learn more about ASP.NET, visit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.
-            The page features <i>videos, tutorials, and samples</i> to help you get the most from ASP.NET.
+            The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET.
             If you have any questions about ASP.NET visit
             <a href="http://forums.asp.net/18.aspx" title="ASP.NET Forum">our forums</a>.
         </p>
-    </div>
+    </header>
 
     <hr />
 
-    <div class="row-fluid">
+    <section class="row-fluid">
         <div>
             <h4>Getting Started</h4>
             <p>
@@ -39,20 +41,7 @@
             <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
             </p>
         </div>
-
-        <%-- 
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-        --%>
-    </div>
+    </section>
 
     <hr />
 

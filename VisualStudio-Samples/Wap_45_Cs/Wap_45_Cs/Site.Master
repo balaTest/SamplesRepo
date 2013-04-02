@@ -8,8 +8,8 @@
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
     <!-- Styles -->
-    <webopt:BundleReference runat="server" Path="~/Content/bootstrap" /> 
-    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <webopt:BundleReference runat="server" Path="~/Content/bootstrap" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
 
     <!-- Enable responsive Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,37 +27,54 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+        <div>
+            <div class="container">
+                <header>
+                    <nav class="navbar navbar-static-top">
+                        <div class="navbar-inner">
 
-    <div class="container-narrow">
+                            <%-- .btn-navbar is used as the toggle for collapsed navbar content --%>
+                            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
 
-      <div>
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="./">Home</a></li>
-          <li><a href="./About.aspx">About</a></li>
-          <li><a href="./Contact.aspx">Contact</a></li>
-        </ul>
-        <h3 class="muted">Project name</h3>
-      </div>
+                            <%-- Be sure to leave the brand out there if you want it shown --%>
+                            <a class="brand" href="./">Project name</a>
 
-      <hr />
+                            <%-- Everything you want hidden at 940px or less, place within here --%>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills pull-right">
+                                    <li class="active"><a href="./">Home</a></li>
+                                    <li><a href="./About.aspx">About</a></li>
+                                    <li><a href="./Contact.aspx">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
 
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
+                        </div>
+                    </nav>
+                </header>
 
-      <div class="footer">
-        <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-      </div>
+                <section>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
 
-    </div> <!-- /container -->
+                <footer class="footer">
+                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                </footer>
 
-    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
-        <%: Scripts.Render("~/bundles/jquery") %>
-        <%: Scripts.Render("~/bundles/bootstrap") %>
-    </asp:PlaceHolder>
+            </div>
+            <!-- /container -->
 
-    </div>
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+                <%: Scripts.Render("~/bundles/jquery") %>
+                <%: Scripts.Render("~/bundles/bootstrap") %>
+            </asp:PlaceHolder>
+
+        </div>
     </form>
 </body>
 </html>

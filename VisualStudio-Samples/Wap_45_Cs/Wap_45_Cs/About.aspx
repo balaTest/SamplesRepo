@@ -3,14 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div>
+    <header>
         <h1><%: Title %></h1>
         <p class="lead">Your app description page.</p>
-    </div>
+    </header>
 
     <hr />
 
-    <div class="row-fluid">
+    <section class="row-fluid">
         <article class="span8">
             <p>
                 Use this area to provide additional information.
@@ -31,7 +31,7 @@
                 Use this area to provide additional information.
             </p>
         </aside>
-    </div>
+    </section>
 
     <hr />
 
