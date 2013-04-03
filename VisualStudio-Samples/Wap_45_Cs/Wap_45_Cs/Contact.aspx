@@ -10,7 +10,7 @@
 
     <hr />
 
-    <section class="row-fluid">
+    <div class="row">
         <section>
             <header>
                 <h3>Phone:</h3>
@@ -52,8 +52,6 @@
                 Redmond, WA 98052-6399
             </p>
         </section>
-    </section>
-
-    <hr />
+    </div>
 
 </asp:Content>

@@ -10,7 +10,7 @@
 
     <hr />
 
-    <section class="row-fluid">
+    <div class="row">
         <article class="span8">
             <p>
                 Use this area to provide additional information.
@@ -31,8 +31,6 @@
                 Use this area to provide additional information.
             </p>
         </aside>
-    </section>
-
-    <hr />
+    </div>
 
 </asp:Content>

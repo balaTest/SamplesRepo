@@ -7,21 +7,20 @@
     <meta charset="utf-8" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
-    <!-- Modernizr : HTML5 shim for IE6-8 support of HTML5 elements -->
-    <asp:PlaceHolder runat="server">     
-          <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>  
+    <%-- Modernizr : HTML5 shim for IE6-8 support of HTML5 elements --%>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
 
     <!-- Styles -->
     <webopt:BundleReference runat="server" Path="~/Content/bootstrap" />
     <webopt:BundleReference runat="server" Path="~/Content/css" />
 
-    <!-- Enable responsive Bootstrap -->
+    <%-- Enable responsive Bootstrap --%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <webopt:BundleReference runat="server" Path="~/Content/bootstrapResponsive" />
 
     <!-- Fav and touch icons -->
-    <!-- TODO: Add any touch icons like in bootstrap sample? -->
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
@@ -30,54 +29,56 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <div class="container">
-                <header>
-                    <nav class="navbar navbar-static-top">
-                        <div class="navbar-inner">
+        <header>
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
 
-                            <%-- .btn-navbar is used as the toggle for collapsed navbar content --%>
-                            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+                        <%-- .btn-navbar is used as the toggle for collapsed navbar content --%>
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                            <%-- Be sure to leave the brand out there if you want it shown --%>
-                            <a class="brand" href="./">Project name</a>
+                        <%-- Include the brand name if you want it shown --%>
+                        <a class="brand" href="./">Project name</a>
 
-                            <%-- Everything you want hidden at 940px or less, place within here --%>
-                            <div class="nav-collapse collapse">
-                                <ul class="nav nav-pills pull-right">
-                                    <li class="active"><a href="./">Home</a></li>
-                                    <li><a href="./About.aspx">About</a></li>
-                                    <li><a href="./Contact.aspx">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!--/.nav-collapse -->
-
+                        <%-- Everything you want hidden at 940px or less, place within here --%>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="./">Home</a></li>
+                                <li><a href="./About">About</a></li>
+                                <li><a href="./Contact">Contact</a></li>
+                            </ul>
                         </div>
-                    </nav>
-                </header>
+                        <!--/.nav-collapse -->
 
-                <section>
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                    </asp:ContentPlaceHolder>
-                </section>
-
-                <footer class="footer">
-                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-                </footer>
-
+                    </div>
+                </div>
             </div>
-            <!-- /container -->
+        </header>
 
-            <asp:PlaceHolder runat="server">
-                <%: Scripts.Render("~/bundles/jquery") %>
-                <%: Scripts.Render("~/bundles/bootstrap") %>
-            </asp:PlaceHolder>
+        <div class="container">
+            <section>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+
+            <hr />
+
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
 
         </div>
+        <!-- /container -->
+
+        <asp:PlaceHolder runat="server">
+            <%: Scripts.Render("~/bundles/jquery") %>
+            <%: Scripts.Render("~/bundles/bootstrap") %>
+        </asp:PlaceHolder>
+
     </form>
 </body>
 </html>
