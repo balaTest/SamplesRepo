@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
@@ -28,9 +28,19 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
         <header>
-            <div class="navbar navbar-fixed-top">
+            <div class="navbar navbar-inverse navbar-fixed-top">
                 <div class="navbar-inner">
                     <div class="container">
 
@@ -47,7 +57,7 @@
                         <%-- Everything you want hidden at 940px or less, place within here --%>
                         <div class="nav-collapse collapse">
                             <ul class="nav nav-pills nav-stacked">
-                                <li class="active"><a href="./">Home</a></li>
+                                <li><a href="./">Home</a></li>
                                 <li><a href="./About">About</a></li>
                                 <li><a href="./Contact">Contact</a></li>
                             </ul>
@@ -70,14 +80,7 @@
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
-
         </div>
-        <!-- /container -->
-
-        <asp:PlaceHolder runat="server">
-            <%: Scripts.Render("~/bundles/jquery") %>
-            <%: Scripts.Render("~/bundles/bootstrap") %>
-        </asp:PlaceHolder>
 
     </form>
 </body>

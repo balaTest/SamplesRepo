@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <header>
-        <h1><%: Title %></h1>
+        <h2><%: Title %></h2>
         <p class="lead">Your app description page.</p>
     </header>
 

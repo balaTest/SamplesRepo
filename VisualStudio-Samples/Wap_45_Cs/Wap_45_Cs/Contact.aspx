@@ -4,54 +4,25 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <header>
-        <h1><%: Title %></h1>
+        <h2><%: Title %></h2>
         <p class="lead">Your contact page.</p>
     </header>
 
     <hr />
 
-    <div class="row">
-        <section>
-            <header>
-                <h3>Phone:</h3>
-            </header>
-            <p>
-                <span class="label">Main:</span>
-                <span>425.555.0100</span>
-            </p>
-            <p>
-                <span class="label">After Hours:</span>
-                <span>425.555.0199</span>
-            </p>
-        </section>
+    <div>
+        <address>
+            <strong>Microsoft Corp.</strong><br />
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+        </address>
 
-        <section>
-            <header>
-                <h3>Email:</h3>
-            </header>
-            <p>
-                <span class="label">Support:</span>
-                <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-            </p>
-            <p>
-                <span class="label">Marketing:</span>
-                <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-            </p>
-            <p>
-                <span class="label">General:</span>
-                <span><a href="mailto:General@example.com">General@example.com</a></span>
-            </p>
-        </section>
-
-        <section>
-            <header>
-                <h3>Address:</h3>
-            </header>
-            <p>
-                One Microsoft Way<br />
-                Redmond, WA 98052-6399
-            </p>
-        </section>
+        <address>
+            <i class="icon-envelope"></i> <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <i class="icon-envelope"></i> <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        </address>
     </div>
 
 </asp:Content>
